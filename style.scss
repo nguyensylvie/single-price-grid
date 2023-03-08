@@ -1,0 +1,140 @@
+// Colors Variables
+$cyan: hsl(179, 62%, 43%);
+$light-cyan: hsl(179, 62%, 45%);
+$bright-yellow: hsl(71, 73%, 54%);
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+$white: hsl(0, 0%, 100%);
+
+// Font Variable
+$karla: "Karla", sans-serif;
+
+//Style
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $karla !important;
+  font-size: 16px;
+}
+
+.component {
+  background-color: $light-gray;
+  min-height: 100vh;
+  .container {
+    max-width: 570px;
+    .section_01 {
+      background-color: $white;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 1.25rem;
+      h1 {
+        color: $cyan;
+        font-size: 1.125rem;
+        font-weight: 700;
+      }
+      h2 {
+        color: $bright-yellow;
+        font-size: 0.875rem;
+        padding-top: 0.75rem;
+        font-weight: 700;
+      }
+      p {
+        color: $grayish-blue;
+        font-size: 0.75rem;
+        line-height: 1.563rem;
+        margin: 0;
+      }
+    }
+    .section_02 {
+      background-color: $cyan;
+      .price {
+        font-size: 1.625rem;
+        font-weight: 700;
+        margin: 0;
+        color: $white;
+        span {
+          color: hsl(179, 62%, 66%);
+          font-weight: 400;
+          font-size: 0.875rem;
+        }
+      }
+      p {
+        font-size: 0.875rem;
+        margin-bottom: 1.25rem;
+      }
+      .btn-primary {
+        background-color: $bright-yellow;
+        width: 100%;
+        border: 0;
+        padding: 10px 0;
+        font-size: 0.875rem;
+      }
+    }
+    .section_03 {
+      background-color: $light-cyan;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      p {
+        margin: 0;
+        font-size: 0.75rem;
+      }
+    }
+    .section_02,
+    .section_03 {
+      color: $white;
+      padding: 1.25rem;
+      h2 {
+        font-size: 0.875rem;
+        font-weight: 700;
+        padding-bottom: 0.5rem;
+      }
+      p {
+        color: hsl(179, 62%, 88%);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .component {
+    .container {
+      .section_01,
+      .section_02,
+      .section_03 {
+        padding: 2.188rem;
+        h2 {
+          font-size: 1rem;
+        }
+      }
+      .section_01 {
+        h1 {
+          font-size: 1.25rem;
+        }
+        h2 {
+          padding-top: 1rem;
+        }
+        p {
+          font-size: 0.875rem;
+        }
+      }
+      .section_02 {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        h2 {
+          padding-bottom: 0;
+          margin: 0;
+        }
+        p {
+          font-size: 0.875rem;
+        }
+      }
+      .section_03 {
+        border-bottom-left-radius: 0;
+        p {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
