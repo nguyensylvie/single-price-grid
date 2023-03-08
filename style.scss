@@ -22,7 +22,7 @@ body {
   background-color: $light-gray;
   min-height: 100vh;
   .container {
-    max-width: 570px;
+    max-width: 600px;
     .section_01 {
       background-color: $white;
       border-top-left-radius: 10px;
@@ -69,6 +69,8 @@ body {
         border: 0;
         padding: 10px 0;
         font-size: 0.875rem;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+          rgba(0, 0, 0, 0.05) 0px 5px 10px;
       }
     }
     .section_03 {

@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
 }
 .component .container {
-  max-width: 570px;
+  max-width: 600px;
 }
 .component .container .section_01 {
   background-color: hsl(0, 0%, 100%);
@@ -60,6 +60,7 @@ body {
   border: 0;
   padding: 10px 0;
   font-size: 0.875rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 .component .container .section_03 {
   background-color: hsl(179, 62%, 45%);
